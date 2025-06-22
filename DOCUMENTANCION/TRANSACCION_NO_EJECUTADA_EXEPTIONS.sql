@@ -1,3 +1,5 @@
+
+--EXEPTION ejemplos de una 
 BEGIN
     -- Primera operación
     INSERT INTO clientes VALUES (...);
