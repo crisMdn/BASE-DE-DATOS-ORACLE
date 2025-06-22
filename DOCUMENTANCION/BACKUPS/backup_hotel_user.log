@@ -1,0 +1,23 @@
+;;; 
+Export: Release 21.0.0.0.0 - Production on Mar Jun 10 23:10:05 2025
+Version 21.3.0.0.0
+
+Copyright (c) 1982, 2021, Oracle and/or its affiliates.  All rights reserved.
+;;; 
+Conectado a: Oracle Database 21c Express Edition Release 21.0.0.0.0 - Production
+Iniciando "C##HOTEL_USER"."SYS_EXPORT_SCHEMA_01":  C##HOTEL_USER/********@XE schemas=C##HOTEL_USER directory=BACKUP_DIR dumpfile=backup_hotel_user.dmp logfile=backup_hotel_user.log reuse_dumpfiles=YES 
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/TABLE_DATA
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Procesando el tipo de objeto SCHEMA_EXPORT/ROLE_GRANT
+Procesando el tipo de objeto SCHEMA_EXPORT/DEFAULT_ROLE
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLESPACE_QUOTA
+Procesando el tipo de objeto SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/TABLE
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/COMMENT
+Procesando el tipo de objeto SCHEMA_EXPORT/TABLE/INDEX/INDEX
+La tabla maestra "C##HOTEL_USER"."SYS_EXPORT_SCHEMA_01" se ha cargado/descargado correctamente
+******************************************************************************
+El juego de archivos de volcado para C##HOTEL_USER.SYS_EXPORT_SCHEMA_01 es:
+  C:\ORACLE_BACKUPS\BACKUP_HOTEL_USER.DMP
+El trabajo "C##HOTEL_USER"."SYS_EXPORT_SCHEMA_01" ha terminado correctamente en Mar Jun 10 23:10:42 2025 elapsed 0 00:00:36

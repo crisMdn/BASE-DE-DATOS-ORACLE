@@ -1,0 +1,24 @@
+--CREACION PARA DIRECTORIA A BACKUPS
+CREATE OR REPLACE DIRECTORY BACKUP_DIR AS 'C:\oracle_backups';
+
+--PERMISO AL USER PARA CREARLO Y ENVIARLO 
+GRANT READ, WRITE ON DIRECTORY BACKUP_DIR TO C##HOTEL_USER;
+
+
+--ESTO DEBO PEGARLO EN CMD PARA CREAR EL BACKUP LOGICO 
+expdp C##HOTEL_USER/canelo123@ORCL schemas=C##HOTEL_USER directory=BACKUP_DIR dumpfile=backup_hotel_user.dmp logfile=backup_hotel_user.log
+
+--SCRIP PARA VERIFICAR SI EXITE EL DIRETORIO 
+SELECT DIRECTORY_NAME, DIRECTORY_PATH FROM ALL_DIRECTORIES;
+
+
+
+--DEBO DARLE PERMISO PARA USAR EL ESPACIO DE TABLASPACE 
+ALTER USER C##HOTEL_USER QUOTA UNLIMITED ON USERS;
+
+
+--este scrip siempre en cmd e servira para recuperar mi backup
+impdp C##HOTEL_USER/canelo123@XE schemas=C##HOTEL_USER directory=BACKUP_DIR dumpfile=backup_hotel_user.dmp logfile=import_hotel_user.log
+
+
+SELECT name FROM v$services;
